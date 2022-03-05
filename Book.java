@@ -1,10 +1,17 @@
-
-
 public class Book implements Comparable<Book> {
 
     private final String name;
     private final int pageNum;
     private final String writerName;
+
+    public String getWriterName() {
+        return writerName;
+    }
+
+    public int getPublishDate() {
+        return publishDate;
+    }
+
     private final int publishDate;
 
 
@@ -22,6 +29,8 @@ public class Book implements Comparable<Book> {
     public int getPageNum() {
         return pageNum;
     }
+    
+    
 
     @Override
     public int compareTo(Book b2) {
